@@ -27,11 +27,11 @@ const TaskForm: FunctionComponent<TaskFormProps> = ({ onTaskCreated }) => {
   };
 
   return (
-    <Form className="row" onSubmit={handleSubmit}>
-      <Form.Group className="col-md-8 mb-3">
+    <Form className="row mb-2" onSubmit={handleSubmit}>
+      <Form.Group className="col-md-11">
         <Form.Control type="text" value={text} onChange={handleTextChange} />
       </Form.Group>
-      <div className="col-md-4">
+      <div className="col-md-1">
         <Button variant="primary" type="submit">
           Add
         </Button>
