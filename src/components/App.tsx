@@ -22,13 +22,17 @@ const App: FunctionComponent<AppProps> = ({ storage }) => {
   const [tasks, setTasks] = useState<Task[]>([]);
   const [filter, setFilter] = useState<boolean | undefined>();
 
-  const fetchTasks = useCallback(() => {
-    (filter === undefined
-      ? list(storage, Task)
-      : findAll(storage, Task, { isDone: filter })
-    )
-      .then(setTasks)
-      .catch(() => {});
+  const fetchTasks = useCallback(async () => {
+    const tasks: Task[] = [];
+    const generator =
+      filter === undefined
+        ? list(storage, Task)
+        : findAll(storage, Task, { isDone: filter });
+
+    for await (const task of generator) {
+      tasks.push(task);
+    }
+    setTasks(tasks);
   }, [filter, storage]);
 
   const handleTaskCreated = (text: string) => {

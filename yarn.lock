@@ -1932,14 +1932,6 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@^27.5.2":
-  version "27.5.2"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-27.5.2.tgz#ec49d29d926500ffb9fd22b84262e862049c026c"
-  integrity sha512-mpT8LJJ4CMeeahobofYWIjFo0xonRS/HfxnVEPMPFSQdGUt1uHCnoPT7Zhb+sjDU2wz0oKV0OLUR0WzrHNgfeA==
-  dependencies:
-    jest-matcher-utils "^27.0.0"
-    pretty-format "^27.0.0"
-
 "@types/json-schema@*", "@types/json-schema@^7.0.4", "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.8", "@types/json-schema@^7.0.9":
   version "7.0.12"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.12.tgz#d70faba7039d5fca54c83c7dbab41051d2b6f6cb"
@@ -1964,11 +1956,6 @@
   version "20.2.4"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.2.4.tgz#e6c3345f7ed9c6df41fdc288a94e2633167bc15d"
   integrity sha512-ni5f8Xlf4PwnT/Z3f0HURc3ZSw8UyrqMqmM3L5ysa7VjHu8c3FOmIo1nKCcLrV/OAmtf3N4kFna/aJqxsfEtnA==
-
-"@types/node@^16.18.33":
-  version "16.18.33"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.18.33.tgz#0e91a6e18a006d3acfb3efa797cdcfc3a6598cd0"
-  integrity sha512-WjW7iYRVtePnSeLxVfE1e+g1yStJrfR9Anuv4y6JZVgOqYyFcW7GhPBk2/J1d0rC4ZNLrI13lS4e32NUuuRmHA==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -2207,39 +2194,39 @@
     "@typescript-eslint/types" "5.59.7"
     eslint-visitor-keys "^3.3.0"
 
-"@varasto/orm@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@varasto/orm/-/orm-0.2.1.tgz#808007ce615369581dfedf0112bebff15685f21f"
-  integrity sha512-tqowrTzwSOSj0hJSCMiRvAlcdxy4JswQOYnEQDx6t/1Q+kFLE7QvScNQdy8oKKOUyNYYTEYzuHUvr5VAjlD3ow==
+"@varasto/orm@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@varasto/orm/-/orm-0.5.0.tgz#0b560e0d228d4a4926cd821bbddf43b801abd955"
+  integrity sha512-ejQQKu75QmSrayrxXE6hQ4jlYXfst8N43C7VB3Ayhl6IKFm+SldD+8C8iYoN1kH2jUJuSmv07ECbNWbaNRm/mw==
   dependencies:
-    "@varasto/query" "^1.0.2"
-    "@varasto/storage" "^3.1.2"
+    "@varasto/query" "^2.0.0"
+    "@varasto/storage" "^4.0.0"
     reflect-metadata "^0.1.13"
     slugify "^1.6.6"
     uuid "^9.0.0"
 
-"@varasto/query@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@varasto/query/-/query-1.0.2.tgz#34cefdef7f5b0f5b5d4b74973e5943a1218bec60"
-  integrity sha512-Wr4eQKxc2Oytr9s2HooLD07jO70NtS2c2M/zqYYSsYOuHvMClbDOASviFkrR/aK7MpbpGP4O134NSmHKp+pE5w==
+"@varasto/query@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@varasto/query/-/query-2.0.0.tgz#6503f5912a3de15159c5ad4200e961ef946471cc"
+  integrity sha512-tF8odRpEj4IhsSS7lgPlJlGjinPym+Pg2KphKq6tiygS9JM0Rrmgg7/8F7rDiHxSXcPth9QczYmfEs+7km6g+g==
   dependencies:
-    "@varasto/storage" "^3.1.0"
+    "@varasto/storage" "^4.0.0"
     lodash.partition "^4.6.0"
-    simple-json-match "^1.0.7"
+    simple-json-match "^1.1.0"
 
-"@varasto/storage@^3.1.0", "@varasto/storage@^3.1.2":
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/@varasto/storage/-/storage-3.1.2.tgz#eaae377dead489d80836a42f160a8ffddbe48f2f"
-  integrity sha512-StFvTorFBnVMpUAUEphew/jrvyGE+t/oHquBk/1T8+qRaMHPQ6/i4TxvI6UuEbfTqTtC3ti0b7FcZikEBeHXtA==
+"@varasto/storage@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@varasto/storage/-/storage-4.0.0.tgz#af50a9e7c17c200745dd81091f977483d80e5788"
+  integrity sha512-gn3FlPjw93p4/FdGsNpk6VMj0bO8yq0uDssMq/VbUIQTBk5+b4lmsnOuy/vvsAHPuYCsoCuQN1jgS1qA+ljtEw==
   dependencies:
     type-fest "^1.2.2"
 
-"@varasto/web-storage@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@varasto/web-storage/-/web-storage-1.0.1.tgz#5d6841d28ce39c96f28381cac3c7e428409fa6f9"
-  integrity sha512-147esmyReU+lzB+EZa9LattgdfB3NV+JcsBGm1Y0+rFNT3+hSeaOV182E9y7dd7xutWHY06HBZvju48cjWCpQQ==
+"@varasto/web-storage@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@varasto/web-storage/-/web-storage-2.0.0.tgz#4e8d8748948545eab5e4759bc92ebecd4f115e95"
+  integrity sha512-fSv2zOOq1JG0vc1jL6O5wM9OPv8wTBWIyUWEAjZutrt65DPs/0Mx9i5GyI/M5uG80QxFQNIfCaM7GI77wQTwzA==
   dependencies:
-    "@varasto/storage" "^3.1.0"
+    "@varasto/storage" "^4.0.0"
     is-valid-slug "^1.0.0"
     isarray "^2.0.5"
 
@@ -5555,7 +5542,7 @@ jest-leak-detector@^27.5.1:
     jest-get-type "^27.5.1"
     pretty-format "^27.5.1"
 
-jest-matcher-utils@^27.0.0, jest-matcher-utils@^27.5.1:
+jest-matcher-utils@^27.5.1:
   version "27.5.1"
   resolved "https://registry.yarnpkg.com/jest-matcher-utils/-/jest-matcher-utils-27.5.1.tgz#9c0cdbda8245bc22d2331729d1091308b40cf8ab"
   integrity sha512-z2uTx/T6LBaCoNWNFWwChLBKYxTMcGBRjAt+2SbP929/Fflb9aa5LGma654Rz8z9HLxsrUaYzxE9T/EFIL/PAw==
@@ -7297,7 +7284,7 @@ pretty-error@^4.0.0:
     lodash "^4.17.20"
     renderkid "^3.0.0"
 
-pretty-format@^27.0.0, pretty-format@^27.5.1:
+pretty-format@^27.5.1:
   version "27.5.1"
   resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-27.5.1.tgz#2181879fdea51a7a5851fb39d920faa63f01d88e"
   integrity sha512-Qb1gy5OrP5+zDf2Bvnzdl3jsTf1qXVMazbvCoKhtKqVs4/YK4ozX4gKQJJVyNe+cajNPn0KoC0MC3FUmaHWEmQ==
@@ -8044,7 +8031,7 @@ signal-exit@^3.0.2, signal-exit@^3.0.3:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.7.tgz#a9a1767f8af84155114eaabd73f99273c8f59ad9"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
 
-simple-json-match@^1.0.7:
+simple-json-match@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/simple-json-match/-/simple-json-match-1.1.0.tgz#09c78ec5621ec0be6f9d46e8f6c4d09dd6c822a0"
   integrity sha512-jGUwoQt3FkwpB9uc0UgEU41IACfMUvD+DsAsCsDII2H2EPl8Ngq0a7HzHx3B6Myuym/heCJaMJI8xVher134Hg==
